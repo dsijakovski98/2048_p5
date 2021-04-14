@@ -79,11 +79,14 @@ class Board {
     }
     
     moveUp() {
-        // Rotate + Slide + Combine + ReverseRows + Rotate
+        // Rotate + ReverseRows + Slide + Combine + ReverseRows + Rotate
         let newGrid = Grid.copyGrid(this.grid)
 
         // Rotate
         newGrid = Grid.transposeGrid(newGrid)
+
+        // ReverseRows
+        newGrid = Grid.reverseGridRows(newGrid)
 
         // Slide
         newGrid = Grid.slideGrid(newGrid)
