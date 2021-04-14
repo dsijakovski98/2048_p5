@@ -2,14 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   height: 100vh;
+}
+
+h1 {
+  /* color: coral; */
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+span {
+  color: coral;
+}
+
+.made {
+  color: black;
+  position: fixed;
+  bottom: 0.5em;
+  right: 1em;
+  font-size: 2rem;
 }
 
 canvas {
